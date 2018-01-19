@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
@@ -27,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         final Activity activity = this;
 
         // Enable Javascript in WebView
-        // WebSettings webSettings = mWebView.getSettings();
-        mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        WebSettings webSettings = mWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 
         mWebView.loadUrl("https://kontrol.bennekom58.tk/");
 
@@ -53,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mWebView.setWebViewClient(new WebViewClient() {
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
-            }
-        });
+//        mWebView.setWebViewClient(new WebViewClient() {
+//            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                Toast.makeText(activity, "Oh no! " + description, Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
 }
