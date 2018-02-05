@@ -1,7 +1,8 @@
 package tk.bennekom58.kontrol;
 
+import android.os.Build;
 import android.os.Handler;
-import android.os.SystemClock;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
 
         setContentView(R.layout.activity_main);
+
+        // Custom navbar color for API level <21 (KitKat)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        }
 
         // Connect to the SwipeRefreshLayout
         mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);

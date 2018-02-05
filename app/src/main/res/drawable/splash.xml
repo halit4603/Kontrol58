@@ -4,7 +4,7 @@
     <item android:drawable="@color/colorPrimaryDark"/>
     <item
         android:gravity="center"
-        android:width="96dp"
-        android:height="96dp"
+        android:width="256dp"
+        android:height="256dp"
         android:drawable="@drawable/splash_bg"/>
 </layer-list>
