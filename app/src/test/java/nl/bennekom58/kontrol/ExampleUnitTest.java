@@ -1,4 +1,4 @@
-package tk.bennekom58.kontrol;
+package nl.bennekom58.kontrol;
 
 import org.junit.Test;
 

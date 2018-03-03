@@ -1,4 +1,4 @@
-package tk.bennekom58.kontrol;
+package nl.bennekom58.kontrol;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("tk.bennekom58.kontrol", appContext.getPackageName());
+        assertEquals("nl.bennekom58.kontrol", appContext.getPackageName());
     }
 }

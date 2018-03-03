@@ -24,6 +24,9 @@
       </value>
     </option>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="gregnau" />
+  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -34,7 +37,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Gradle</id>
+            <id>Android</id>
           </State>
         </selected-state>
       </profile-state>
@@ -46,6 +49,7 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="5" BundledDictionary0="android.dic" BundledDictionary1="jetbrains.dic" BundledDictionary2="doxygen.dic" BundledDictionary3="english.dic" BundledDictionary4="objc.dic" Folders="0" Dictionaries="0" />
   <component name="masterDetails">
     <states>
       <state key="ScopeChooserConfigurable.UI">

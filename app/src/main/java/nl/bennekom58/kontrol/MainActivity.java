@@ -1,4 +1,4 @@
-package tk.bennekom58.kontrol;
+package nl.bennekom58.kontrol;
 
 import android.os.Build;
 import android.os.Handler;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Custom navbar color for API level <21 (KitKat)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
         }
 
         // Connect to the SwipeRefreshLayout
@@ -84,6 +84,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mWebView.loadUrl("https://kontrol.bennekom58.tk/");
+        mWebView.loadUrl("https://kontrol.bennekom58.nl/");
     }
 }

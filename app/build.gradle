@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "tk.bennekom58.kontrol"
+        applicationId "nl.bennekom58.kontrol"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 2
